@@ -147,7 +147,6 @@ export default function TutorialPage() {
       initialTwoOmrStage: "mark",
       nextCondition: {
         type: "twoOmrProcessCompleted",
-        blockedMessage: "15번 3번 마킹 후 지우기까지 완료하면 다음으로 넘어갈 수 있어요.",
       },
     },
     {
@@ -223,7 +222,6 @@ export default function TutorialPage() {
       nextCondition: {
         type: "typeBOmrQuestionFilled",
         questionNumber: 4,
-        blockedMessage: "4번 문제에 계산기 입력을 완료하면 다음으로 넘어갈 수 있어요.",
       },
     },
     {
