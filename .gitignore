@@ -18,6 +18,16 @@ apps/server/dist
 .turbo
 coverage
 apps/server/generated
+.pnpm-store/
+.cache/
+*.tsbuildinfo
+apps/client/.vite/
+apps/client/dist/
+apps/client/dist-ssr/
+
+# Local AI/editor metadata
+.claude/
+.cursor/
 
 # macOS
 .DS_Store

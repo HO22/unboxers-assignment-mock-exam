@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Pretendard", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}

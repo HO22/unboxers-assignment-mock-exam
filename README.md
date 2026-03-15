@@ -184,13 +184,27 @@ pnpm dev
 | 10 | 1 | 8 |
 | 11 | 104 | 8 |
 
-## 웹앱 실행 방법 요청
+## Web App Run
 
-이 저장소를 포크한 뒤, 아래에 웹앱 실행 방법도 함께 작성해 주세요.
+웹앱 실행 방법:
 
-예시 형식:
+```bash
+# 의존성 설치
+pnpm install
 
-- `## Web App Run`
-- `pnpm install`
-- `pnpm dev`
-- 웹앱 실행 주소 기재
+# 데이터베이스 초기화
+pnpm db:generate
+pnpm db:push
+pnpm db:seed
+
+# 서버와 클라이언트 동시 실행
+pnpm dev:all
+
+# 또는 개별 실행
+pnpm dev          # 서버만 실행
+pnpm dev:client   # 클라이언트만 실행
+```
+
+- 서버 주소: `http://localhost:3001`
+- 클라이언트 주소: `http://localhost:5173`
+- Swagger UI: `http://localhost:3001/swagger`
